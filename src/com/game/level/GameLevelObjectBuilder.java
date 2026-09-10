@@ -1,6 +1,6 @@
 package com.game.level;
 
-// Concrete Builder #1: the actual immutable GameLevel object
+// Concrete Builder #1: the actual GameLevel object
 public class GameLevelObjectBuilder implements LevelBuilder {
 
     private String name;

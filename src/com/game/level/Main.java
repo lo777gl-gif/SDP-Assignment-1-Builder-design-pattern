@@ -17,6 +17,11 @@ public class Main {
         String explorationBriefing = explorationBriefingBuilder.getResult(); // representation 2: text
         System.out.println(explorationBriefing);
 
+        JsonLevelBuilder explorationJsonBuilder = new JsonLevelBuilder();
+        director.makeExplorationLevel(explorationJsonBuilder);
+        String explorationJson = explorationJsonBuilder.getResult(); // representation 3: json
+        System.out.println(explorationJson);
+
         // Boss level
         GameLevelObjectBuilder bossObjectBuilder = new GameLevelObjectBuilder();
         director.makeBossLevel(bossObjectBuilder);
@@ -27,6 +32,11 @@ public class Main {
         director.makeBossLevel(bossBriefingBuilder);
         String bossBriefing = bossBriefingBuilder.getResult();
         System.out.println(bossBriefing);
+
+        JsonLevelBuilder bossJsonBuilder = new JsonLevelBuilder();
+        director.makeBossLevel(bossJsonBuilder);
+        String bossJson = bossJsonBuilder.getResult();
+        System.out.println(bossJson);
 
     }
 }
