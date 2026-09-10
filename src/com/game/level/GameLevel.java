@@ -21,6 +21,6 @@ public final class GameLevel {
 
     @Override
     public String toString() {
-        return "GameLevel[" + name + ", " + biome + ", " + difficulty + ", enemies=" + enemyCount + ", boss=" + (bossName == null ? "none" : bossName) + "]";
+        return "GameLevel[" + name + ", " + biome + ", " + difficulty + ", enemies=" + enemyCount + ", boss=" + (bossName == null ? "none" : bossName) + "]\n";
     }
 }
